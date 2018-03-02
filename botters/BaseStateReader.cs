@@ -37,10 +37,5 @@ namespace botters
         {
             return readLine().Split().Select(int.Parse).ToArray();
         }
-
-        public Vec ReadVec()
-        {
-            return Vec.Parse(readLine());
-        }
     }
 }

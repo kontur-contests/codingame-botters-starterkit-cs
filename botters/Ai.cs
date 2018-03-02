@@ -1,14 +1,16 @@
-﻿namespace botters
+﻿using System.Linq;
+
+namespace botters
 {
+    public static class Const {
+
+    }
     public class Ai
     {
         public string GetNextMove(State state, Countdown countdown)
         {
-            while (!countdown.IsFinished)
-            {
-                //Think about state!
-            }
-            return "Command";
+            if (state.RoundType < 0) return "IRONMAN";
+            return "ATTACK_NEAREST UNIT";
         }
     }
 }
