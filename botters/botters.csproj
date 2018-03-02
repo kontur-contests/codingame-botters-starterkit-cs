@@ -49,20 +49,20 @@
     <Compile Include="Ai.cs" />
     <Compile Include="Ai_Tests.cs" />
     <Compile Include="BaseStateReader.cs" />
-    <Compile Include="Bush.cs" />
+    <Compile Include="Model\Bush.cs" />
     <Compile Include="Countdown.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="Model\Entity.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="HeroType.cs" />
-    <Compile Include="InitData.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Model\HeroType.cs" />
+    <Compile Include="Model\InitData.cs" />
+    <Compile Include="Model\Item.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Spawn.cs" />
-    <Compile Include="State.cs" />
+    <Compile Include="Model\Spawn.cs" />
+    <Compile Include="Model\State.cs" />
     <Compile Include="StateReader.cs" />
-    <Compile Include="State_Tests.cs" />
-    <Compile Include="Unit.cs" />
-    <Compile Include="UnitType.cs" />
+    <Compile Include="Model\State_Tests.cs" />
+    <Compile Include="Model\Unit.cs" />
+    <Compile Include="Model\UnitType.cs" />
     <Compile Include="Vec.cs" />
   </ItemGroup>
   <ItemGroup>

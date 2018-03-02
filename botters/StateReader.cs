@@ -44,9 +44,9 @@ namespace botters
             var pos = new Vec(int.Parse(parts[1]), int.Parse(parts[2]));
             var radius = int.Parse(parts[3]);
             string entityType = parts[0];
-            if (entityType == "Bush")
+            if (entityType == "BUSH")
                 return new Bush(pos, radius);
-            else if (entityType == "Spawn")
+            else if (entityType == "SPAWN")
                 return new Spawn(pos, radius);
             else
                 throw new Exception(entityType);
@@ -116,7 +116,7 @@ namespace botters
         {
             switch (type)
             {
-                case "DEEADPOOL": return HeroType.Deadpool;
+                case "DEADPOOL": return HeroType.Deadpool;
                 case "DOCTOR_STRANGE": return HeroType.DoctorStrange;
                 case "HULK": return HeroType.Hulk;
                 case "IRONMAN": return HeroType.IronMan;

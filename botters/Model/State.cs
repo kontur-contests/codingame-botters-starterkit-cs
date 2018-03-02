@@ -11,6 +11,10 @@ namespace botters
         public readonly int RoundType;
         public readonly List<Unit> Units;
 
+        public IEnumerable<Unit> Get(UnitType unitType, int team) => Units.Where(u => u.Team == team && u.UnitType == unitType);
+        public IEnumerable<Unit> GetMy(UnitType unitType) => Get(unitType, InitData.Team);
+        public IEnumerable<Unit> GetHis(UnitType unitType) => Get(unitType, 1-InitData.Team);
+
         public State(int gold, int enemyGold, int roundType, List<Unit> units, InitData initData)
         {
             Gold = gold;
